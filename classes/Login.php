@@ -1,7 +1,7 @@
 <?php
 
 require_once 'User.php';
-require_once '../database/connection.php';
+require_once '../includes/db.php';
 
 //classe de login, utilizando a classe usuario e o arquivo de conexao com banco de dados
 
