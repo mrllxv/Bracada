@@ -54,16 +54,16 @@
             </a>
             <ul class="nav__list">
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../views/index.php" class="nav__list-link">Home</a>
+                    <a href="/Bracada/views/index.php" class="nav__list-link">Home</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../athletes/athletes.php" class="nav__list-link">Atletas</a>
+                    <a href="/Bracada/pages/athletes/athletes.php" class="nav__list-link">Atletas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../medals/medals.php" class="nav__list-link">Medalhas</a>
+                    <a href="/Bracada/pages/medals/medals.php" class="nav__list-link">Medalhas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../gallery/gallery.php" class="nav__list-link">Galeria</a>
+                    <a href="/Bracada/pages/gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
                     <a href="#" class="nav__list-link">Quiz</a>
@@ -71,7 +71,7 @@
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="../../actions/cadastroForm.php"
+                <a href="/Bracada/actions/cadastroForm.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>

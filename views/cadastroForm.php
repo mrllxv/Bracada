@@ -27,12 +27,16 @@
                 <i class="fa-solid fa-cake-candles icon-modify"></i>
                 <input type="date" name="data_nascimento" placeholder="Data de Nascimento" required>
             </label>
+            <label for="frase_secreta">
+                <i class="fa-solid fa-key icon-modify"></i>
+                <input type="text" name="frase_secreta" placeholder="Frase Secreta" required>
+            </label>
             <div class="btns__container">
                 <button type="submit" class="btn btn_submit" id="btn_register">Cadastrar</button>
                 <button type="reset" class="btn btn_reset">Limpar dados</button>
             </div>
 
-            <a href="../homepage/index.html" class="voltar"> 
+            <a href="index.php" class="voltar"> 
                 <i class="fa-solid fa-house"></i>
             </a>
         </form>
