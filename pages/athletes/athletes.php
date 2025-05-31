@@ -47,23 +47,24 @@
     -->
 
     <!-- Estruturando o cabeçalho do site e a barra de navegação -->
-    <header class="header header-athletes">
+   <!-- Estruturando o cabeçalho do site e a barra de navegação -->
+   <header class="header header-athletes">
         <nav class="header__nav">
-            <a href="../homepage/index.html" class="nav__home-btn">
+            <a href="/Bracada/views/index.php" class="nav__home-btn">
                 <h1 class="nav__title">Braçada Final</h1>
             </a>
             <ul class="nav__list">
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../homepage/index.html" class="nav__list-link">Home</a>
+                    <a href="../../views/index.php" class="nav__list-link">Home</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../pages/atletas/athletes.html" class="nav__list-link">Atletas</a>
+                    <a href="../../athletes/athletes.php" class="nav__list-link">Atletas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../pages/medals/medalhas.html" class="nav__list-link">Medalhas</a>
+                    <a href="../../medals/medals.php" class="nav__list-link">Medalhas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../gallery/gallery.html" class="nav__list-link">Galeria</a>
+                    <a href="../../gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
                     <a href="#" class="nav__list-link">Quiz</a>
@@ -71,11 +72,11 @@
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="../register & login/register.html"
+                <a href="../../actions/cadastroForm.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="../register & login/login.html"
+                <a href="../../actions/login.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
