@@ -30,6 +30,4 @@ class Pais{
     public function setBandeira(string $bandeira){
         $this->bandeira = $bandeira;
     }
-
-
 }
