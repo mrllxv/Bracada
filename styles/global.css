@@ -268,6 +268,18 @@
       background-color: aliceblue;
       color: var(--clr-gray-900);
     }
+
+    .footer {
+      width: 100%;
+      background-color: #232526;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: var(--color-text-secondary);
+      padding: 2rem;
+      position: absolute;
+      bottom: 0;
+    }
   }
   
   /*  Criando a camada para concentrar os estilos de elementos individuais da homepage */
@@ -429,4 +441,56 @@
   
   @layer gallery {
   
+  }
+
+  @layer athletes {
+
+    .athletes-search {
+      align-content: center;
+      margin-block: var(--spacing-2-25);
+    }
+
+
+    .athletes-search__container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--spacing-1-75);
+      margin: 0 auto;
+    }
+
+    .athletes__title {
+      font-size: 3rem;
+    }
+
+
+    
+    .athletes__input-search {
+      border-radius: 12px;
+      border: 1px solid var(--clr-blue-300);
+      padding: var(--spacing-2-25);
+      color: #000;
+    }
+
+    .athletes__input-search::placeholder {
+      color: #000;
+    }
+
+    .divider {
+      border: 1px solid var(--bg-dark);
+    }
+
+    .athletes {
+      max-width: var(--container-xl);
+      /* margin-block: var(--spacing-1-75); */
+      margin: var(--spacing-1-75) auto;
+    }
+
+    .athlete-card__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      }
   }

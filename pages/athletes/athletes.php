@@ -84,33 +84,43 @@
         </nav>
     </header>
 
-    <section class="athletes">
-        <div class="athletes__search-container">
+    <section class="athletes-search">
+        <div class="athletes-search__container">
             <h2 class="athletes__title">Catálogo de atletas</h2>
-            <input type="search" name="search_athlete" id="search_athlete" class="input athletes__input-search">
+            <input type="search" name="search_athlete" id="search_athlete" class=" athletes__input-search" placeholder="Digite o nome do atleta">
 
-            <select name="" id="">
-                <option value="none">Nome do</option>
+            <!-- <select name="" id="country_" class="athletes__filters">
+                <option value="none">Escolha um País</option>
                 <option value="country">País</option>
             </select>
 
-            <select name="" id="">
-                <option value="none">Nome do</option>
+            <select name="" id="country_" class="athletes__filters">
+                <option value="none">Escolha uma modalidade</option>
                 <option value="modality">modalidade</option>
-            </select>
+            </select> -->
 
         </div>
     </section>
 
-    <main class="main">
+    <hr class="divider">
 
+    <main class="main">
+        <section class="athletes">
+            <a href="" class="athlete-card__container">
+                <article class="athlete-card">
+                    <h2 class="athlete-card__name">Michael Phelps</h2>
+                    <p class="athlete-card__birthday">27/09/1970</p>
+                    <!-- <p class="athlete-card__modality"></p> -->
+                </article>
+            </a>
+        </section>
     </main>
 
     <div class="arrow-up hidden">
         <img src="../../icons/arrow.svg" alt="">
     </div>
 
-    <footer id="footer">
+    <footer class="footer" id="footer">
         <p class="footer__infos">
             2025 - Projeto Braçada Final -
             <a href="https://github.com/mrllxv/BracadaFinal" target="_blank" class="footer__infos-github">Github</a>
