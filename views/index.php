@@ -69,11 +69,11 @@
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="/Bracada/actions/cadastroForm.php"
+                <a href="cadastroForm.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="/Bracada/actions/login.php"
+                <a href="login.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
