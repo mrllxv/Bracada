@@ -40,7 +40,6 @@ class Login
                     $row['email'],
                     $row['senha'], // já hashada
                     new DateTime($row['data_nascimento']),
-                    $row['tipo_perfil'],
                     true  // senha já hashada
                 );
                 //armazena o objeto User do usuário logado

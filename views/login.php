@@ -12,7 +12,7 @@
 <body class="form-page">
     <div class="form-container">
         <h1>Entrar</h1>
-        <form class="form" id="login-form" method="POST">
+        <form action="/Bracada/actions/login.php" class="form" id="login-form" method="POST">
             <label for="email">
                 <i class="fa-solid fa-envelope icon-modify"></i>
                 <input type="email" name="email" placeholder="Email" required />

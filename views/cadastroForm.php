@@ -10,7 +10,7 @@
 <body class="form-page">
     <div class="form-container">
         <h1>Crie sua conta</h1>
-        <form action ="cadastro.php"id="cadastro-form" class="form" method="POST">
+        <form action ="/Bracada/actions/cadastro.php" id="cadastro-form" class="form" method="POST">
             <label for="nome">
                 <i class="fa-solid fa-person icon-modify"></i>
                 <input type="text" name="nome" placeholder="Nome" required>

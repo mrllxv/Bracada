@@ -12,7 +12,7 @@
 <body class="form-page">
     <div class="form-container">
         <h1>Recuperação de Senha</h1>
-        <form id="esqueci-senha-form" class="form" method="POST">
+        <form action="/Bracada/actions/redefinir_senha.php" id="esqueci-senha-form" class="form" method="POST">
             <label for="frase_secreta">
                 <i class="fa-solid fa-key icon-modify"></i>
                 <input type="text" name="frase_secreta" placeholder="Frase Secreta" required>
