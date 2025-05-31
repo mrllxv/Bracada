@@ -6,7 +6,13 @@ $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 
 try {
     $conn = connect();
-    $stmt = $conn->prepare("SELECT nome, data_nascimento FROM atleta WHERE id = ?");
+    $stmt = $conn->prepare(
+        "SELECT a.nome, data_nascimento FROM atleta WHERE id = ?  
+
+        
+        
+        "
+    );
     $stmt->bind_param("i", $id);
     $stmt->execute();
     $stmt->bind_result($nome, $data_nascimento);
