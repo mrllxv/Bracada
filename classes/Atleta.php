@@ -9,7 +9,7 @@ class Atleta
     private int $cod_pais;
     private int $ativo;
 
-    public function __construct(int $id, string $nome, string $genero, string $biografia, DateTime $data_nascimento, int $cod_pais)
+    public function __construct(int $id, string $nome, string $genero, string $biografia, DateTime $data_nascimento, int $cod_pais, int $ativo = 1)
     {
         $this->id = $id;
         $this->nome = $nome;

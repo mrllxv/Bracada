@@ -4,27 +4,27 @@ require_once '../utils/funcoes.php';
 requireAdmin();
 require_once '../includes/db.php';
 
-if (isset($_GET['id'])) {
-    // converte o id pra tipo inteiro por segurança
-    $id = intval($_GET['id']);
+if (isset($_POST['id'])) {
+    $id = intval($_POST['id']);
 
     try {
         $conn = connect();
+
         $stmt = $conn->prepare("UPDATE atleta SET ativo = 0 WHERE id = ?");
         $stmt->bind_param("i", $id);
         $stmt->execute();
 
-        // verifica se alguma linha foi afetada, se o atleta existia e foi atualizadop
         if ($stmt->affected_rows > 0) {
-            echo "Atleta excluído logicamente com sucesso.";
+            echo json_encode(['sucesso' => 'Atleta excluído logicamente com sucesso.']);
         } else {
-            echo "Atleta não encontrado ou já excluído.";
+            echo json_encode(['erro' => 'Atleta não encontrado ou já inativo.']);
         }
 
+        $stmt->close();
         $conn->close();
     } catch (Exception $e) {
-        echo "Erro ao excluir atleta: " . $e->getMessage();
+        echo json_encode(['erro' => 'Erro ao excluir atleta: ' . $e->getMessage()]);
     }
 } else {
-    echo "ID do atleta não informado.";
+    echo json_encode(['erro' => 'ID do atleta não informado.']);
 }

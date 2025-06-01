@@ -9,13 +9,14 @@ class User
     private string $senha;
     private DateTime $data_nascimento;
     private string $frase_secreta;
+    private int $ativo;
 
     //propriedade do tipo perfil
     private int $cod_tipo_perfil;
 
 
     //Construtor do usuario
-    public function __construct(int $id_usuario, string $nome, string $email, string $senha, DateTime $data_nascimento, int $cod_tipo_perfil, bool $senhaJaHash = false)
+    public function __construct(int $id_usuario, string $nome, string $email, string $senha, DateTime $data_nascimento, int $cod_tipo_perfil, bool $senhaJaHash = false, int $ativo = 1)
     {
         $this->id_usuario = $id_usuario;
         $this->nome = $nome;
@@ -26,6 +27,7 @@ class User
         $this->senha = $senhaJaHash ? $senha : password_hash($senha, PASSWORD_DEFAULT);
         $this->data_nascimento = $data_nascimento;
         $this->cod_tipo_perfil = $cod_tipo_perfil;
+        $this->ativo = $ativo;
     }
 
 
@@ -58,6 +60,17 @@ class User
         return $this->id_usuario;
     }
 
+    public function getAtivo(): int
+    {
+        return $this->ativo;
+    }
+
+    public function getSenha(): string
+{
+    return $this->senha;
+}
+
+
     //SETTERS
     public function setTipoPerfilId(int $cod_tipo_perfil): void
     {
@@ -87,6 +100,11 @@ class User
     public function setSenha(string $senha): void
     {
         $this->senha = password_hash($senha, PASSWORD_DEFAULT);
+    }
+
+    public function setAtivo(int $ativo): void
+    {
+        $this->ativo = $ativo;
     }
 
     //verifica a frase secreta do usuario
