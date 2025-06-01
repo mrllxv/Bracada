@@ -16,6 +16,7 @@ try {
     if ($stmt->fetch()) {
         // apenas 1 resultado, então monta o json diretamente sem array
         echo json_encode([
+            'id_atleta' => $id,
             'nome' => $nome,
             'pais' => $pais,
             'modalidade' => $modalidade,

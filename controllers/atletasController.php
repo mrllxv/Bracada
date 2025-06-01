@@ -4,15 +4,16 @@ header('Content-Type: application/json');
 
 try {
     $conn = connect();
-    $stmt = $conn->prepare("SELECT nome, data_nascimento FROM atleta");
+    $stmt = $conn->prepare("SELECT id, nome, data_nascimento FROM atleta");
     $stmt->execute();
-    $stmt->bind_result($nome, $data_nascimento);
+    $stmt->bind_result($id,$nome, $data_nascimento);
 
     $atletas = [];
 
     while ($stmt->fetch()) {
         //monta um array com os dados de cada atleta (formato array associativo)
         $atletas[] = [
+            'id' => $id,
             'nome' => $nome,
             'data_nascimento' => $data_nascimento
         ];

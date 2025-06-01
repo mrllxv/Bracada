@@ -13,7 +13,7 @@
 
       atletas.forEach(atleta => {
         const link = document.createElement('a');
-        link.href = `/Bracada/pages/athletes/athlete_profile.php`; // ou um link para detalhes do atleta, se quiser
+        link.href = `/Bracada/pages/athletes/athlete_profile.php?id=${atleta.id}`; // ou um link para detalhes do atleta, se quiser
         link.classList.add('athlete-card__container');
 
         const card = document.createElement('article');
