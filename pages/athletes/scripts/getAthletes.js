@@ -1,7 +1,7 @@
 
   async function carregarAtletas() {
     try {
-      const resposta = await fetch('../../api/atletas.php'); // ajuste o caminho se necessário
+      const resposta = await fetch('../../controllers/atletasController.php'); // ajuste o caminho se necessário
 
       if (!resposta.ok) throw new Error('Erro ao buscar atletas');
 
