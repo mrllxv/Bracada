@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <title>Home | Braçada final</title>
+    <title>Atletas | Braçada final</title>
 </head>
 
 <body class="body">
@@ -47,27 +47,24 @@
     -->
 
     <!-- Estruturando o cabeçalho do site e a barra de navegação -->
-   <!-- Estruturando o cabeçalho do site e a barra de navegação -->
-   <header class="header header-athletes">
+    <!-- Estruturando o cabeçalho do site e a barra de navegação -->
+    <header class="header header-athletes">
         <nav class="header__nav">
             <a href="/Bracada/views/index.php" class="nav__home-btn">
                 <h1 class="nav__title">Braçada Final</h1>
             </a>
             <ul class="nav__list">
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../views/index.php" class="nav__list-link">Home</a>
+                    <a href="/Bracada/pages/views/index.php" class="nav__list-link">Home</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../athletes/athletes.php" class="nav__list-link">Atletas</a>
+                    <a href="/Bracada/pages/athletes/athletes.php" class="nav__list-link">Atletas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../medals/medals.php" class="nav__list-link">Medalhas</a>
+                    <a href="/Bracada/pages/medals/medals.php" class="nav__list-link">Medalhas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../gallery/gallery.php" class="nav__list-link">Galeria</a>
-                </li>
-                <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="#" class="nav__list-link">Quiz</a>
+                    <a href="/Bracada/pages/gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
             </ul>
 
@@ -76,8 +73,7 @@
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="../../actions/login.php"
-                    class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="../../actions/login.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
             </div>
@@ -87,7 +83,8 @@
     <section class="athletes-search">
         <div class="athletes-search__container">
             <h2 class="athletes__title">Catálogo de atletas</h2>
-            <input type="search" name="search_athlete" id="search_athlete" class=" athletes__input-search" placeholder="Digite o nome do atleta">
+            <input type="search" name="search_athlete" id="search_athlete" class=" athletes__input-search"
+                placeholder="Digite o nome do atleta">
 
             <!-- <select name="" id="country_" class="athletes__filters">
                 <option value="none">Escolha um País</option>
@@ -106,13 +103,30 @@
 
     <main class="main">
         <section class="athletes">
-            <!-- <a href="" class="athlete-card__container">
+            <a href="" class="athlete-card__container">
                 <article class="athlete-card">
+                    <figure class="athlete-card__profile">
+                        <img src="./Micheal_Phelps.webp" alt="" class="athlete-card__image">
+                    </figure>
+
                     <h2 class="athlete-card__name">Michael Phelps</h2>
                     <p class="athlete-card__birthday">27/09/1970</p>
                     <p class="athlete-card__modality"></p>
                 </article>
-            </a> -->
+            </a>
+
+            <a href="" class="athlete-card__container">
+                <article class="athlete-card">
+
+                    <figure class="athlete-card__profile">
+                        <img src="./Micheal_Phelps.webp" alt="" class="athlete-card__image">
+                    </figure>
+
+                    <h2 class="athlete-card__name">Michael Phelps</h2>
+                    <p class="athlete-card__birthday">27/09/1970</p>
+                    <p class="athlete-card__modality"></p>
+                </article>
+            </a>
         </section>
     </main>
 

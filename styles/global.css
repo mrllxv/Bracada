@@ -465,17 +465,53 @@
 @layer athletesList {
   .athletes-search {
     align-content: center;
-    margin-block: var(--spacing-2-25);
+    margin-block: var(--spacing-3xl);
+  }
+
+  .athletes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-3xl);
   }
 
   .athletes-search__container {
-    width: 50%;
+    max-width: var(--container-xl);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: var(--spacing-1-75);
     margin: 0 auto;
+  }
+
+  .athlete-card__container {
+    max-width: var(--container-md);
+    display: block;
+    text-align: center;
+    padding: var(--spacing-1-2);
+  }
+
+  .athlete-card {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: var(--spacing-1-75);
+    padding: var(--spacing-1-2);
+  }
+
+  .athlete-card__profile {
+    width: 100%;
+  }
+
+  .athlete-card__image {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
   }
 
   .athletes__title {
