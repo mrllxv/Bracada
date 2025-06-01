@@ -73,7 +73,7 @@
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="login.php"
+                <a href="loginForm.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
