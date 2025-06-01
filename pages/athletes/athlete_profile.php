@@ -108,7 +108,7 @@
                 <a href="cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="login.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="../../views/login.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
             </div>
