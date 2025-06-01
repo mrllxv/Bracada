@@ -337,7 +337,11 @@
 
 @layer formsPages {
   .form-page {
-    background-color: var(--bg-light);
+    background-image: url("../assets/background_forms.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: var(--bg-light); */
     display: flex;
     justify-content: center;
     align-items: center;
