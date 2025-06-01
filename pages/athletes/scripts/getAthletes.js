@@ -1,7 +1,7 @@
 
   async function carregarAtletas() {
     try {
-      const resposta = await fetch('../../api/atletas.php'); // ajuste o caminho se necessário
+      const resposta = await fetch('../../controllers/atletasController.php'); // ajuste o caminho se necessário
 
       if (!resposta.ok) throw new Error('Erro ao buscar atletas');
 
@@ -13,7 +13,7 @@
 
       atletas.forEach(atleta => {
         const link = document.createElement('a');
-        link.href = "#"; // ou um link para detalhes do atleta, se quiser
+        link.href = `/Bracada/pages/athletes/athlete_profile.php`; // ou um link para detalhes do atleta, se quiser
         link.classList.add('athlete-card__container');
 
         const card = document.createElement('article');

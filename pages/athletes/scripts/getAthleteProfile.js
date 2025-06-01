@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
-  const atletaId = params.get('id');
+  const atletaId = parseInt(params.get('id'), 10); 
 
   if (!atletaId) {
     document.body.innerHTML = "<p>Atleta não encontrado.</p>";
     return;
   }
 
-  fetch(`../../api/get_atleta.php?id=${atletaId}`)
+  fetch(`../../controllers/atletaController.php?id=${atletaId}`)
     .then(res => res.json())
     .then(atleta => {
       if (atleta.erro) {
