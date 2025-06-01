@@ -55,19 +55,16 @@
             </a>
             <ul class="nav__list">
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../views/index.php" class="nav__list-link">Home</a>
+                    <a href="/Bracada/pages/views/index.php" class="nav__list-link">Home</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../athletes/athletes.php" class="nav__list-link">Atletas</a>
+                    <a href="/Bracada/pages/athletes/athletes.php" class="nav__list-link">Atletas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../medals/medals.php" class="nav__list-link">Medalhas</a>
+                    <a href="/Bracada/pages/medals/medals.php" class="nav__list-link">Medalhas</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="../../gallery/gallery.php" class="nav__list-link">Galeria</a>
-                </li>
-                <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="#" class="nav__list-link">Quiz</a>
+                    <a href="/Bracada/pages/gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
             </ul>
 
