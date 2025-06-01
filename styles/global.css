@@ -1,4 +1,5 @@
-@layer reset_css, global, homepage, formsPages, medals ,athletesList, athleteIndividual;
+@layer reset_css, global, homepage, formsPages, athletesList, medals, athleteIndividual;
+
 
 
 :root {
@@ -512,6 +513,28 @@
 /* Nesta layer abaixo, concentramos os estilos que serão aplicados em tabelas que mostrarão as medalhas do atleta*/
 
 @layer medals {
+  /* .banner-medals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner-medals::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/banner_medals.jpg");
+    background-size: cover;
+    background-position: left;
+    filter: blur(1);
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+} */
+
   .athlete-medals {
     padding: 2rem;
   }
