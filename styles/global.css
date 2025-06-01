@@ -186,11 +186,13 @@
     font-family: var(--font-heading);
   }
 
+
   /* Definindo propriedades para o body */
   body {
     font-family: var(--font-body);
     background: var(--bg-light);
     color: var(--color-text-primary);
+    /* position: relative; */
   }
 
   /* Definindo propriedades para a classe hidden que é usada para esconder elementos da tela quando necessário */
@@ -279,11 +281,12 @@
     flex-direction: column;
     text-align: center;
     color: var(--color-text-secondary);
-    padding: 2rem;
-    position: relative;
+    padding: var(--spacing-2xl);
+    margin-block-start: var(--spacing-2-25);
+    /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
   }
 
   .footer__link{
