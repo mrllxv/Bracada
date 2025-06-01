@@ -120,25 +120,25 @@
         <div class="athlete-container">
             <section class="athlete-presentation">
                 <h2 class="athlete-presentation__name">
-                    Simone Biles
+                    <!-- Simone Biles -->
                 </h2>
                 <div class="athlete-presentation__infos">
                     <p class="athlete-presentation__infos-country">
                         <span class="athlete-presentation__country"></span>
-                        Estados Unidos da América
+                        <!-- Estados Unidos da América -->
                     </p>
                     <p class="athlete-presentation__infos-modality">
-                        Ginástica Artística
+                        <!-- Ginástica Artística -->
                     </p>
                 </div>
             </section>
             
             <section class="athlete-biography">
                 <h2 class="athlete-biography__title">
-                    Biografia do Atleta
+                    <!-- Biografia do Atleta -->
                 </h2>
                 <p class="athlete-biography__content">
-                    Nascida em Columbus, Ohio, em 14 de março de 1997, Simone Biles começou sua odisseia na ginástica com
+                    <!-- Nascida em Columbus, Ohio, em 14 de março de 1997, Simone Biles começou sua odisseia na ginástica com
                     apenas seis anos de idade e sua trajetória estava destinada à grandeza desde o início.
                     Muito jovem para se classificar para os Jogos Olímpicos de Londres em 2012, Biles alcançou a fama em
                     2013. Com apenas 16 anos, ela conquistou duas medalhas de ouro no Campeonato da Antuérpia, incluindo o
@@ -147,7 +147,7 @@
                     Com quatro ouros no Campeonato Mundial em 2014 e outros quatro em 2015, a jovem já era uma potência
                     formidável rumo aos seus primeiros Jogos Olímpicos no Rio 2016. Biles não deixou margem para dúvidas,
                     garantindo o ouro nas provas de solo, equipe, salto e all-around, além de conquistar o bronze na trave
-                    de equilíbrio.
+                    de equilíbrio. -->
                 </p>
             </section>
             <section class="athlete-medals">
@@ -197,6 +197,8 @@
         </p>
         </p>
     </footer>
+
+    <script src="./scripts/getAthleteProfile.js"></script>
 </body>
 
 </html>

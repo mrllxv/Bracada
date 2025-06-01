@@ -106,13 +106,13 @@
 
     <main class="main">
         <section class="athletes">
-            <a href="" class="athlete-card__container">
+            <!-- <a href="" class="athlete-card__container">
                 <article class="athlete-card">
                     <h2 class="athlete-card__name">Michael Phelps</h2>
                     <p class="athlete-card__birthday">27/09/1970</p>
-                    <!-- <p class="athlete-card__modality"></p> -->
+                    <p class="athlete-card__modality"></p>
                 </article>
-            </a>
+            </a> -->
         </section>
     </main>
 
@@ -131,6 +131,9 @@
         </p>
         </p>
     </footer>
+
+    <script src="./scripts/getAthletes.js"></script>
+
 
 </body>
 
