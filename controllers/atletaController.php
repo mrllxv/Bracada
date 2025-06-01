@@ -1,18 +1,13 @@
 <?php
-require_once '../database/connection.php';
+require_once '../includes/db.php';
 header('Content-Type: application/json');
 
 $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 
 try {
     $conn = connect();
-    $stmt = $conn->prepare(
-        "SELECT a.nome, data_nascimento FROM atleta WHERE id = ?  
-
-        
-        
-        "
-    );
+    // utilizando view no banco de dados
+    $stmt = $conn->prepare("SELECT * FROM perfil_atleta WHERE id_atleta = ?");
     $stmt->bind_param("i", $id);
     $stmt->execute();
     $stmt->bind_result($nome, $data_nascimento);
