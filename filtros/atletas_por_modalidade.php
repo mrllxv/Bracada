@@ -2,20 +2,19 @@
 require_once '../includes/db.php';
 header('Content-Type: application/json');
 
-
-// pega o parâmetro modalidade enviado via url usando get, senão atribui uma string vazia ''
-//utilizando operador ternario tambem
-$modalidade = isset($_GET['modalidade']) ? ($_GET['modalidade']) : '';
+// verifica se o parametro modalidade foi passado na url
+$modalidade = isset($_GET['modalidade']) ? $_GET['modalidade'] : '';
 
 try {
     $conn = connect();
 
-    // se o parametro modalidade não estiver vazio, prepara uma consulta filtrando pela modalidade
     if ($modalidade !== '') {
-        $stmt = $conn->prepare("SELECT nome, data_nascimento FROM atleta WHERE modalidade = ?");
+        // filtra atletas com base na modalidade (usando a VIEW)
+        $stmt = $conn->prepare("SELECT nome_atleta, data_nascimento FROM atletas_por_modalidade WHERE descricao_tipo_modalidade = ?");
         $stmt->bind_param("s", $modalidade);
     } else {
-        $stmt = $conn->prepare("SELECT nome, data_nascimento FROM atleta");
+        // sem filtro, retorna todos
+        $stmt = $conn->prepare("SELECT nome_atleta, data_nascimento FROM atletas_por_modalidade");
     }
 
     $stmt->execute();
@@ -35,3 +34,4 @@ try {
     echo json_encode(['erro' => 'Erro ao buscar atletas: ' . $e->getMessage()]);
 }
 ?>
+
