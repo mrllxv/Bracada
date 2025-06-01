@@ -1,15 +1,22 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
-  const atletaId = parseInt(params.get("id"), 10);
+
+  
+  const atletaId = parseInt(params.get('id'), 10); 
 
   if (isNaN(atletaId)) {
     document.body.innerHTML = "<p>Atleta não encontrado.</p>";
     return;
   }
 
+
   try {
     const response = await fetch(`../../controller/atletaController.php?id=${atletaId}`);
     const atleta = await response.json();
+  fetch(`../../controllers/atletaController.php?id=${atletaId}`)
+    .then(res => res.json())
+    .then(atleta => {
+    
 
     if (atleta.erro) {
       document.body.innerHTML = `<p>${atleta.erro}</p>`;
