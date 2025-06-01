@@ -209,13 +209,13 @@
         <img src="../../icons/arrow.svg" alt="">
     </div>
 
-    <footer id="footer">
+    <footer class="footer" id="footer">
         <p class="footer__infos">
             2025 - Projeto Braçada Final -
-            <a href="https://github.com/mrllxv/Bracada" target="_blank" class="footer__infos-github">Github</a>
+            <a href="https://github.com/mrllxv/Bracada" target="_blank" class="footer__infos-github footer__link">Github</a>
         <p class="footer__infos-advice">Este projeto é apenas para cunho educativo e totalmente baseado no site oficial
             dos
-            <a href="https://www.olympics.com/pt/" class="footer__infos-reference">Jogos Olímpicos</a>.
+            <a href="https://www.olympics.com/pt/" class="footer__infos-reference footer__link">Jogos Olímpicos</a>.
             Todos os direitos e informações são reservados a eles
         </p>
         </p>
