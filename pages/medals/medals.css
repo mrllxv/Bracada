@@ -1,0 +1,55 @@
+@import url(../../styles/global.css);
+
+.banner-medals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner-medals::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../assets/banner_medals.jpg");
+    background-size: cover;
+    background-position: left;
+    filter: brightness(40%);
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.banner__infos-container {
+    max-width: var(--container-xl);
+    color: var(--color-text-secondary);
+}
+
+.banner__infos-title {
+    font-size: 5rem;
+    border-bottom: 1px solid var(--clr-white-300);
+    margin-block-end: var(--spacing-1-75);
+    color: var(--color-text-secondary);
+}
+
+.banner__infos-copy {
+    max-width: var(--container-lg);
+}
+
+.medals {
+    width: 100%;
+}
+
+.athlete-medals__title {
+    font-size: var(--spacing-1-75);
+    border-bottom: 1px solid var(--color-text-primary);
+    padding: 1rem;
+}
+
+.athlete-medals__container {
+    max-width: var(--container-xl);
+    margin: var(--spacing-1-75) auto;
+}
+
