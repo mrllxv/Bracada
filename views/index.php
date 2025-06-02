@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
 
-    <link rel="stylesheet" href="../styles/global.css"/>
+    <link rel="stylesheet" href="../styles/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet" />
     <title>Home | Braçada final</title>
-    
+
+
 </head>
 
 <body class="body-home">
@@ -67,12 +68,10 @@
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="cadastroForm.php"
-                    class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="loginForm.php"
-                    class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="loginForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
             </div>
@@ -210,10 +209,12 @@
     <footer class="footer" id="footer">
         <p class="footer__infos">
             2025 - Projeto Braçada Final -
-            <a href="https://github.com/mrllxv/Bracada" target="_blank" class="footer__infos-github footer__link">Github</a>
+            <a href="https://github.com/mrllxv/Bracada" target="_blank"
+                class="footer__infos-github footer__link">Github</a>
         <p class="footer__infos-advice">Este projeto é apenas para cunho educativo e totalmente baseado no site oficial
             dos
-            <a href="https://www.olympics.com/pt/" target="_blank" class="footer__infos-reference footer__link">Jogos Olímpicos</a>.
+            <a href="https://www.olympics.com/pt/" target="_blank" class="footer__infos-reference footer__link">Jogos
+                Olímpicos</a>.
             Todos os direitos e informações são reservados a eles
         </p>
         </p>

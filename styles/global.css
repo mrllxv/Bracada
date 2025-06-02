@@ -329,6 +329,85 @@
     background: linear-gradient(to bottom, #232526, transparent);
     box-shadow: none;
   }
+
+  .banner__infos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: var(--spacing-1-75);
+    max-width: var(--container-xl);
+    margin: auto;
+    color: var(--color-text-secondary);
+  }
+
+  .banner__infos-title {
+    font-size: 3rem;
+    color: var(--color-text-secondary);
+  }
+
+  .swimming-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl); /* 40px */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl); /* 64px entre seções */
+  }
+
+  .swimming-section {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.02); /* leve destaque no fundo */
+    padding: var(--spacing-xl);
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .title-section {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-blue-300);
+    margin-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--clr-blue-300);
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .paragraph-reverse {
+    color: var(--color-text-primary);
+  }
+
+  .swimming-curiosities__list,
+  .swimming-modality__genre-list {
+    list-style-position: inside;
+    margin-top: var(--spacing-sm);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .swimming-container {
+      padding: var(--spacing-lg);
+    }
+
+    .swimming-section {
+      padding: var(--spacing-lg);
+    }
+
+    .title-section {
+      font-size: 1.6rem;
+    }
+
+    .paragraph {
+      font-size: 1rem;
+    }
+  }
 }
 
 /* Aqui concentramos todos os estilos das páginas que contém formulários de validação de login, como a de registro, login e o reset da senha do usuário */
@@ -472,7 +551,6 @@
     padding: var(--spacing-1-75);
     gap: var(--spacing-3xl);
     margin: var(--spacing-2xl) auto;
-
   }
 
   .gallery__card {
@@ -504,9 +582,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
-    opacity: 0.7; 
-    z-index: 2; 
+    width: 100%;
+    opacity: 0.7;
+    z-index: 2;
     transition: opacity 0.3s ease;
   }
 
