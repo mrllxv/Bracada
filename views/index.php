@@ -49,7 +49,7 @@
     <!-- Estruturando o cabeçalho do site e a barra de navegação -->
     <header class="header header-home">
         <nav class="header__nav">
-            <a href="/Bracada/views/index.php" class="nav__home-btn">
+            <a href="../../views/index.php" class="nav__home-btn">
                 <h1 class="nav__title">Braçada Final</h1>
             </a>
             <ul class="nav__list">
@@ -68,10 +68,12 @@
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="/Bracada/views/cadastroForm.php"
+                    class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="loginForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="/Bracada/views/loginForm.php"
+                    class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
             </div>
@@ -219,6 +221,7 @@
         </p>
         </p>
     </footer>
+
 </body>
 
 </html>
