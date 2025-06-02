@@ -54,6 +54,9 @@ if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['data_nascime
 
         $conn->close();
 
+        // redirecionando para pagina principal apos o cadastro
+        header('Location: /Bracada/views/index.php');
+
         echo "Usuário cadastrado com sucesso.";
     } catch (Exception $e) {
         echo "Erro: " . $e->getMessage();

@@ -22,6 +22,9 @@ try {
             $_SESSION['id_usuario'] = $usuario->getId();
             $_SESSION['nome'] = $usuario->getNome();
             $_SESSION['perfil'] = $usuario->getTipoPerfilId();
+            
+            header('Location: /Bracada/views/index.php');
+            exit;
 
             echo "Login realizado com sucesso.";
         } else {

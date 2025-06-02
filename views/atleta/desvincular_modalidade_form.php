@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vincular Modalidade</title>
+    <title>Desvincular Modalidade</title>
     <link rel="stylesheet" href="../../styles/global.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body class="form-page">
     <div class="form-container">
-        <h1>Vincular Modalidade ao Atleta</h1>
-        <form action="/Bracada/dbcreate/vincular_modalidade.php" method="POST" class="form" id="vincular-form">
+        <h1>Desvincular Modalidade do Atleta</h1>
+        <form action="/Bracada/dbcreate/desvincular_modalidade.php" method="POST" class="form" id="desvincular-form">
             <label for="id_atleta">
                 <i class="fa-solid fa-id-badge icon-modify"></i>
                 <input type="number" name="id_atleta" id="id_atleta" placeholder="ID do Atleta" required min="1" />
@@ -30,20 +30,13 @@
             </label>
 
             <div class="btns__container">
-                <button type="submit" class="btn btn_submit">Vincular</button>
+                <button type="submit" class="btn btn_delete">
+                    <i class="fa-solid fa-unlink"></i> Desvincular
+                </button>
                 <button type="reset" class="btn btn_reset">Limpar</button>
             </div>
 
-            <div class="btns__container" style="margin-top: 20px;">
-                <a href="/Bracada/views/atleta/cadastroMedalhaForm.php" class="btn btn_submit" style="text-decoration:none; display:inline-block; padding:10px 20px; background-color:#007bff; color:#fff; border-radius:5px; text-align:center;">
-                    <i class="fa-solid fa-medal"></i> Cadastrar Medalha
-                </a>
-                <a href="/Bracada/views/atleta/desvincular_modalidade_form.php" class="btn btn_delete">
-                    <i class="fa-solid fa-unlink"></i> Desvincular Modalidade
-                </a>
-            </div>
-
-            <a href="/Bracada/views/atleta/cadastroAtletaForm.php" class="voltar">
+            <a href="/Bracada/views/atleta/vincular_modalidade_form.php" class="voltar">
                 <i class="fa-solid fa-house"></i> Voltar
             </a>
         </form>

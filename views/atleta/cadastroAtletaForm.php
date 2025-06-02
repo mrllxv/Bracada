@@ -12,7 +12,7 @@
 <body class="form-page">
     <div class="form-container">
         <h1>Cadastrar Atleta</h1>
-        <form action="/Bracada/dbadmin/create_atleta.php" id="cadastro-form" class="form" method="POST">
+        <form action="/Bracada/dbcreate/create_atleta.php" id="cadastro-form" class="form" method="POST">
             <label for="nome">
                 <i class="fa-solid fa-person icon-modify"></i>
                 <input type="text" name="nome" placeholder="Nome completo" required>
@@ -54,6 +54,11 @@
                 <i class="fa-solid fa-house"></i>
                 Voltar
             </a>
+            <a href="/Bracada/views/atleta/deleteAtletaForm.php"
+                class="button nav__buttons nav__buttons--circle nav__buttons--hover nav__buttons--focus">
+                <i class="fa-solid fa-trash"></i> Excluir Atleta
+            </a>
+
         </form>
     </div>
 </body>
