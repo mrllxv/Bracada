@@ -1,6 +1,4 @@
-@layer reset_css, global, homepage, formsPages, athletesList, medals, athleteIndividual;
-
-
+@layer reset_css, global, homepage, gallery ,formsPages, athletesList, medals, athleteIndividual;
 
 :root {
   /* O que são váriaveis css? */
@@ -187,7 +185,6 @@
     font-family: var(--font-heading);
   }
 
-
   /* Definindo propriedades para o body */
   body {
     font-family: var(--font-body);
@@ -290,12 +287,12 @@
     right: 0; */
   }
 
-  .footer__link{
+  .footer__link {
     text-decoration: underline;
     color: var(--clr-white-300);
   }
 
-  .footer__link:hover  {
+  .footer__link:hover {
     color: gold;
   }
 }
@@ -354,7 +351,7 @@
     background-color: var(--bg-dark);
     padding: var(--spacing-3xl);
     border-radius: 20px;
-    text-align: center; 
+    text-align: center;
   }
 
   .form {
@@ -459,8 +456,72 @@
 
 /* Nesta layer abaixo, concentramos os estilos da nossa página de galeria */
 
-/* @layer gallery {
-} */
+@layer gallery {
+  .banner-gallery {
+    width: 100%;
+  }
+
+  .gallery__container {
+    max-width: var(--container-full);
+    min-height: 75vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: start;
+    padding: var(--spacing-1-75);
+    gap: var(--spacing-3xl);
+    margin: var(--spacing-2xl) auto;
+
+  }
+
+  .gallery__card {
+    max-width: var(--container-sm);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    gap: var(--spacing-1-25);
+    border-radius: 20px;
+    padding: var(--spacing-1-25) var(--spacing-1-75);
+    /* border: 1px solid #000; */
+  }
+
+  .gallery__card-thumbnail {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .gallery__card-image.base {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .gallery__card-image.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0.7; 
+    z-index: 2; 
+    transition: opacity 0.3s ease;
+  }
+
+  .gallery__card-button--expand {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+  }
+}
 
 @layer athletesList {
   .athletes-search {
@@ -549,28 +610,6 @@
 /* Nesta layer abaixo, concentramos os estilos que serão aplicados em tabelas que mostrarão as medalhas do atleta*/
 
 @layer medals {
-  /* .banner-medals {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    width: 100%;
-    position: relative;
-}
-
-.banner-medals::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("../assets/banner_medals.jpg");
-    background-size: cover;
-    background-position: left;
-    filter: blur(1);
-    background-repeat: no-repeat;
-    z-index: -1;
-    opacity: 0.8;
-} */
-
   .athlete-medals {
     padding: 2rem;
   }
