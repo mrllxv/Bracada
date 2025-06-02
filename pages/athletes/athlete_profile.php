@@ -159,20 +159,19 @@ require_once '../../actions/verifica_login.php';
                     <table class="athlete-medals__table">
                         <thead class="athlete-medals__thead">
                             <tr class="athlete-medals__row">
-                                <th class="athlete-medals__header">Categoria</th>
                                 <th class="athlete-medals__header athlete-medals__header--gold">Ouro</th>
                                 <th class="athlete-medals__header athlete-medals__header--silver">Prata</th>
                                 <th class="athlete-medals__header athlete-medals__header--bronze">Bronze</th>
-                                <!-- <th class="athlete-medals__header">Total</th> -->
+                                <th class="athlete-medals__header">Total</th>
                             </tr>
                         </thead>
                         <tbody class="athlete-medals__body">
                             <tr class="athlete-medals__row">
             
                                 <td class="athlete-medals__cell"></td>
-                                <td class="athlete-medals__cell">5</td>
-                                <td class="athlete-medals__cell">3</td>
-                                <td class="athlete-medals__cell">2</td>
+                                <td class="athlete-medals__cell"></td>
+                                <td class="athlete-medals__cell"></td>
+                                <td class="athlete-medals__cell"></td>
                                 <!-- <td class="athlete-medals__cell">10</td> -->
                             </tr>
                         </tbody>

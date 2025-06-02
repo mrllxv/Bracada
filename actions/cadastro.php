@@ -4,14 +4,14 @@ require_once '../classes/User.php';
 require_once '../enum/Perfil.php';
 
 
-if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['data_nascimento'])) {
-    echo $_POST['nome'];
+if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['data_nascimento'], $_POST['frase_secreta'])) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     $data_nascimento = $_POST['data_nascimento'];
+    $frase_secreta = $_POST['frase_secreta'];
 
-    if (empty($nome) || empty($email) || empty($senha) || empty($data_nascimento)) {
+    if (empty($nome) || empty($email) || empty($senha) || empty($data_nascimento) || empty($frase_secreta)) {
         echo "Preencha todos os campos do formulário.";
         exit;
     }
@@ -36,6 +36,7 @@ if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['data_nascime
             $email,
             $senha,
             new DateTime($data_nascimento),
+            $frase_secreta,
             Perfil::USUARIO, // perfil padrão para usuario
             false,
             1
@@ -47,8 +48,8 @@ if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['data_nascime
         $ativo = 1;
         $tipoPerfil = $usuario->getTipoPerfilId();
 
-        $stmtInsert = $conn->prepare("INSERT INTO usuario (nome, email, senha, data_nascimento, cod_tipo_perfil, ativo) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmtInsert->bind_param("ssssii", $nome, $email, $senhaHash, $data, $tipoPerfil, $ativo);
+        $stmtInsert = $conn->prepare("INSERT INTO usuario (nome, email, senha, data_nascimento, cod_tipo_perfil, ativo, frase_secreta) VALUES (?, ?, ?, ?, ?, ?,?)");
+        $stmtInsert->bind_param("ssssiis", $nome, $email, $senhaHash, $data, $tipoPerfil, $ativo,$frase_secreta);
         $stmtInsert->execute();
 
         $conn->close();

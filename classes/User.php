@@ -16,7 +16,7 @@ class User
 
 
     //Construtor do usuario
-    public function __construct(int $id_usuario, string $nome, string $email, string $senha, DateTime $data_nascimento, int $cod_tipo_perfil, bool $senhaJaHash = false, int $ativo = 1)
+    public function __construct(int $id_usuario, string $nome, string $email, string $senha, DateTime $data_nascimento, string $frase_secreta, int $cod_tipo_perfil, bool $senhaJaHash = false, int $ativo = 1)
     {
         $this->id_usuario = $id_usuario;
         $this->nome = $nome;
@@ -26,6 +26,7 @@ class User
         //utilizando operador ternario
         $this->senha = $senhaJaHash ? $senha : password_hash($senha, PASSWORD_DEFAULT);
         $this->data_nascimento = $data_nascimento;
+        $this->frase_secreta = $frase_secreta;
         $this->cod_tipo_perfil = $cod_tipo_perfil;
         $this->ativo = $ativo;
     }

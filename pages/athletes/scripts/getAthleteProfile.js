@@ -21,6 +21,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector(".athlete-presentation__infos-modality").textContent = atleta.modalidade;
     document.querySelector(".athlete-biography__content").textContent = atleta.biografia;
 
+    const medalhas = atleta.medalhas || { ouro: 0, prata: 0, bronze: 0, total: 0 };
+
+    document.querySelector(".athlete-medals__body").innerHTML = `
+      <tr class="athlete-medals__row">
+        <td class="athlete-medals__cell">${medalhas.ouro}</td>
+        <td class="athlete-medals__cell">${medalhas.prata}</td>
+        <td class="athlete-medals__cell">${medalhas.bronze}</td>
+        <td class="athlete-medals__cell">${medalhas.total}</td>
+      </tr>
+    `;
+
   } catch (error) {
     console.error("Erro ao carregar atleta:", error);
     document.body.innerHTML = "<p>Erro ao carregar os dados do atleta.</p>";
