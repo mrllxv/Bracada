@@ -64,9 +64,6 @@
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
                     <a href="/Bracada/pages/gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
-                <!-- <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="#" class="nav__list-link">Quiz</a>
-                </li> -->
             </ul>
 
             <div class="nav__container-buttons">

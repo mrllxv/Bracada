@@ -25,6 +25,7 @@
 .banner__infos-container {
     max-width: var(--container-xl);
     color: var(--color-text-secondary);
+    padding: var(--container-xl);
 }
 
 .banner__infos-title {
@@ -51,5 +52,6 @@
 .athlete-medals__container {
     max-width: var(--container-xl);
     margin: var(--spacing-1-75) auto;
+
 }
 
