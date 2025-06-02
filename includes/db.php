@@ -3,7 +3,7 @@ function connect() {
     $servidor = "localhost";      
     $database = "bracada_final";  
     $usuario = "root";            
-    $senha = "mrllsql9090@";                  
+    $senha = "";                  
 
     $conn = mysqli_connect($servidor, $usuario, $senha, $database);
 
