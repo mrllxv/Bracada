@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../includes/db.php';
 header('Content-Type: application/json');
 
@@ -13,6 +14,7 @@ try {
                 bronze,
                 total_medalhas
             FROM medalhas_por_atleta
+            WHERE ativo = 1
             ORDER BY total_medalhas DESC";
 
     $stmt = $conn->prepare($sql);

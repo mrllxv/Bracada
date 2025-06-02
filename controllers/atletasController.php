@@ -1,10 +1,11 @@
 <?php
+session_start();
 require_once '../includes/db.php';
 header('Content-Type: application/json');
 
 try {
     $conn = connect();
-    $stmt = $conn->prepare("SELECT id, nome, data_nascimento FROM atleta");
+    $stmt = $conn->prepare("SELECT id, nome, data_nascimento FROM atleta WHERE ativo = 1");
     $stmt->execute();
     $stmt->bind_result($id,$nome, $data_nascimento);
 

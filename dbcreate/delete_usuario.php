@@ -1,7 +1,4 @@
 <?php
-session_start();
-require_once '../utils/funcoes.php';
-requireAdmin();  // só admins podem desativar usuários
 require_once '../includes/db.php';
 
 // Verifica se o email foi enviado no POST

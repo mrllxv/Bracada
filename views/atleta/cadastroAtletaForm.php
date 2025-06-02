@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Atleta</title>
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="form-page">
     <div class="form-container">
         <h1>Cadastrar Atleta</h1>
@@ -41,15 +43,19 @@
             </label>
 
             <div class="btns__container">
+                <a href="/Bracada/views/atleta/vincular_modalidade_form.php" class="btn btn_secondary">
+                    <i class="fa-solid fa-link"></i> Vincular Atleta a Modalidade
+                </a>
                 <button type="submit" class="btn btn_submit">Cadastrar</button>
                 <button type="reset" class="btn btn_reset">Limpar dados</button>
             </div>
 
-            <a href="index.php" class="voltar"> 
+            <a href="/Bracada/pages/athletes/athletes.php" class="voltar">
                 <i class="fa-solid fa-house"></i>
+                Voltar
             </a>
         </form>
     </div>
 </body>
-</html>
 
+</html>

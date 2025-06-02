@@ -1,5 +1,5 @@
 <?php
-require_once '../../actions/verifica_login.php'; 
+require_once '../../actions/verifica_login.php';
 ?>
 
 <!DOCTYPE html>
@@ -79,6 +79,8 @@ require_once '../../actions/verifica_login.php';
                 </a>
                 <a href="/Bracada/views/loginForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
+                </a>
+                <a href="/Bracada/views/atleta/cadastroAtletaForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                 </a>
             </div>
         </nav>

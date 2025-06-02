@@ -1,7 +1,4 @@
 <?php
-session_start();
-require_once '../utils/funcoes.php';
-requireAdmin();
 require_once '../includes/db.php';
 
 if (isset($_POST['id']) && isset($_POST['biografia']) && isset($_POST['cod_medalha'])) {
