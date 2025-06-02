@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const tbody = document.querySelector('.athlete-medals__body');
 
-    // Limpa a linha de exemplo inicial
     tbody.innerHTML = '';
 
     try {
-        const response = await fetch('/Bracada/controllers/medalhasController.php'); // ajuste o caminho se necessário
+        const response = await fetch('/Bracada/controllers/medalhasController.php'); 
 
         if (!response.ok) {
             throw new Error('Erro ao buscar os dados da API');

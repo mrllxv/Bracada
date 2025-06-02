@@ -59,7 +59,7 @@ require_once '../../actions/verifica_login.php';
             </a>
             <ul class="nav__list">
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="/Bracada/pages/views/index.php" class="nav__list-link">Home</a>
+                    <a href="/Bracada/views/index.php" class="nav__list-link">Home</a>
                 </li>
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
                     <a href="/Bracada/pages/athletes/athletes.php" class="nav__list-link">Atletas</a>
