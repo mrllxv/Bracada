@@ -152,7 +152,7 @@ require_once '../../actions/verifica_login.php';
         </p>
     </footer>
 
-    <script src=""></script>
+    <script src="../medals/scripts/getMedals.js"></script>
 </body>
 
 </html>
