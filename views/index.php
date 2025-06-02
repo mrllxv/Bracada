@@ -89,7 +89,7 @@
             </p>
             <p class="banner__infos-copy">Venha viver a mágia da natação conosco</p>
 
-            <a href="main"
+            <a href="#main"
                 class="button banner__infos-button banner__infos-button--hover banner__infos-button--focus">Mais
                 informações</a>
         </div>
