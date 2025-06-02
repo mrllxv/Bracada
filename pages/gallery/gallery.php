@@ -1,5 +1,5 @@
 <?php
-require_once '../../actions/verifica_login.php'; 
+require_once '../../actions/verifica_login.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,6 +10,7 @@ require_once '../../actions/verifica_login.php';
     <meta name="description" content="" />
 
     <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,17 +69,14 @@ require_once '../../actions/verifica_login.php';
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
                     <a href="/Bracada/pages/gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
-                <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="#" class="nav__list-link">Quiz</a>
-                </li>
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="/Bracada/actions/cadastroForm.php"
+                <a href="/Bracada/views/cadastroForm.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="../../actions/login.php"
+                <a href="/Bracada/views/loginForm.php"
                     class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
@@ -87,6 +85,17 @@ require_once '../../actions/verifica_login.php';
     </header>
 
     <main class="main">
+        <!-- Modal de imagem -->
+        <div class="modal hidden" id="imageModal">
+            <div class="modal__overlay" id="modalOverlay"></div>
+            <div class="modal__content">
+                <button class="modal__close" id="closeModal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img src="" alt="Imagem ampliada" class="modal__image" id="modalImage">
+            </div>
+        </div>
+
         <section class="banner-gallery">
             <div class="banner-gallery__container">
                 <h2 class="banner-gallery__title">Galeria de imagens</h2>
@@ -98,7 +107,7 @@ require_once '../../actions/verifica_login.php';
                         <button class="gallery__card-button--expand">
                             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                         </button>
-                        <img src="" alt="" class="gallery__card-image">
+                        <img src="../../assets/Olympic-medals.jpg" alt="" class="gallery__card-image">
                     </div>
                     <p class="gallery"></p>
 

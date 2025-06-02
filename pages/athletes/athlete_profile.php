@@ -103,16 +103,13 @@ require_once '../../actions/verifica_login.php';
                 <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
                     <a href="/Bracada/pages/gallery/gallery.php" class="nav__list-link">Galeria</a>
                 </li>
-                <li class="nav__list-item nav__list-item--hover nav__list-item--focus">
-                    <a href="#" class="nav__list-link">Quiz</a>
-                </li>
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="/Bracada/views/cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="../../views/login.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="/Bracada/views/loginForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
             </div>

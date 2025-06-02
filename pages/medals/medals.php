@@ -79,10 +79,10 @@ require_once '../../actions/verifica_login.php';
             </ul>
 
             <div class="nav__container-buttons">
-                <a href="cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="/Bracada/views/cadastroForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Cadastrar
                 </a>
-                <a href="loginForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
+                <a href="/Bracada/views/loginForm.php" class="button nav__buttons nav__buttons--hover nav__buttons--focus">
                     Entrar
                 </a>
             </div>

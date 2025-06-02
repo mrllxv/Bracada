@@ -25,7 +25,7 @@
 .banner__infos-container {
     max-width: var(--container-xl);
     color: var(--color-text-secondary);
-    padding: var(--container-xl);
+    /* padding: var(--container-xl); */
 }
 
 .banner__infos-title {
